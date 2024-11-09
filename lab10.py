@@ -1,5 +1,9 @@
-def get_divisors(n):
-    divisors = [i for i in range(1, n + 1) if n % i == 0]
-    return divisors
+import sys
 
-print(get_divisors(10))
+number = int(sys.argv[1])
+
+for i in range(1, number + 1):
+    if number % i == 0:
+        print(i, end=" ")
+
+print()
